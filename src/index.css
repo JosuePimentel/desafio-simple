@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f3fee7;
+  --color-primary-100: #e4fccb;
+  --color-primary-200: #cbf89e;
+  --color-primary-300: #a8f165;
+  --color-primary-400: #87e536;
+  --color-primary-500: #65c617; /* default */
+  --color-primary-600: #4ea20e;
+  --color-primary-700: #3c7b10;
+  --color-primary-800: #336113;
+  --color-primary-900: #2c5215;
+  --color-primary-950: #132e05;
+
+  --color-secondary-50: #f1f9fa;
+  --color-secondary-100: #dbeef2;
+  --color-secondary-200: #badee7;
+  --color-secondary-300: #8bc6d5;
+  --color-secondary-400: #54a5bc;
+  --color-secondary-500: #3989a1;
+  --color-secondary-600: #326f88;
+  --color-secondary-700: #2e5c70;
+  --color-secondary-800: #2d4e5d;
+  --color-secondary-900: #294250;
+  --color-secondary-950: #1a303d; /* default */
+}
+
+@layer base {
+  /* Add your base styles here */
+  * {
+    @apply border-0 m-0 p-0 box-border select-none appearance-none outline-none;
+    -webkit-user-drag: none;
+    font-family: "Poppins", sans-serif, normal;
+    font-weight: 400;
+  }
+
+  img {
+    -webkit-user-drag: none;
+    pointer-events: none;
+  }
+
+  html,
+  body,
+  #root {
+    @apply min-h-dvh! w-dvw overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  /* Add your component styles here */
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}
